@@ -45,6 +45,19 @@ const featuredProjects = [
     productionHref: "https://devrelay-delta.vercel.app/",
     tone: "violet",
   },
+  {
+    index: "04",
+    eyebrow: "Predictive modeling / motorsport",
+    title: "F1 Race Predictor",
+    metric: "0.754",
+    metricLabel: "Spearman correlation",
+    description:
+      "A research-grade forecasting pipeline that predicts complete Formula 1 finishing orders before a race weekend and again after qualifying.",
+    tags: ["Python", "FastF1", "Ranking models", "Race simulation"],
+    visualSteps: ["Ingest", "Rank", "Simulate"],
+    githubHref: "https://github.com/neevj2006/F1_Race_Predictor",
+    tone: "coral",
+  },
 ];
 
 const archiveProjects = [
@@ -367,7 +380,7 @@ export default function Home() {
         <div className="hero-proof" aria-label="Key facts">
           <div><strong>30%</strong><span>workflow improvement</span></div>
           <div><strong>3.7/4.0</strong><span>GPA / Dean&apos;s List</span></div>
-          <div><strong>6</strong><span>featured projects</span></div>
+          <div><strong>8</strong><span>projects showcased</span></div>
           <div><strong>DEC ’27</strong><span>expected graduation</span></div>
         </div>
       </section>
@@ -429,7 +442,7 @@ export default function Home() {
           <div className="archive-label"><span className="eyebrow">Project archive</span><span>From the résumé</span></div>
           {archiveProjects.map(([name, category, detail], index) => (
             <article className="archive-row" key={name}>
-              <span>{String(index + 4).padStart(2, "0")}</span>
+              <span>{String(index + 5).padStart(2, "0")}</span>
               <h3>{name}</h3>
               <span>{category}</span>
               <p>{detail}</p>

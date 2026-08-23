@@ -36,6 +36,8 @@ test("uses only resume and LinkedIn facts with corrected contact details", async
   assert.match(page, /DevRelay/);
   assert.match(page, /https:\/\/devrelay-delta\.vercel\.app\//);
   assert.match(page, /https:\/\/github\.com\/neevj2006\/DevRelay/);
+  assert.match(page, /F1 Race Predictor/);
+  assert.match(page, /https:\/\/github\.com\/neevj2006\/F1_Race_Predictor/);
   assert.match(page, /Gideon — Voice Assistant/);
   assert.match(page, /GenZ Script/);
   assert.match(page, /https:\/\/github\.com\/neevj2006/);
